@@ -20,6 +20,10 @@ margin-left: 25px;
     background-color: blue;
 }
 
+@media (max-width: 768px) {
+    gap: 10px;
+}
+
 `;
 
 export const Ball = styled.h1`
@@ -31,6 +35,11 @@ justify-content: center;
 align-items: center;
 color: white;
 background-color: ${({background}) => background};
+
+@media (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+}
 
 
 `;
@@ -51,5 +60,9 @@ justify-content: center;
 align-items: center;
 margin: 50px 0;
 gap: 50px;
+@media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+}
 
 `
